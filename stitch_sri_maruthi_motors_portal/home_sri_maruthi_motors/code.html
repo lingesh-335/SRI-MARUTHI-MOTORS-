@@ -1,0 +1,362 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Sri Maruthi Motors | Authorized Hero Dealership Bargur</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.2) 100%);
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#dce2f3",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#595b5d",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#191c1e",
+                    "background": "#f9f9ff",
+                    "on-secondary-container": "#656464",
+                    "primary-fixed-dim": "#ffb3b1",
+                    "surface-container-low": "#f0f3ff",
+                    "on-primary-fixed": "#410007",
+                    "primary": "#b90027",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-container": "#fafbfd",
+                    "inverse-primary": "#ffb3b1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "outline": "#916e6d",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#474646",
+                    "primary-fixed": "#ffdad8",
+                    "surface-container-high": "#e2e8f8",
+                    "secondary-container": "#e5e2e1",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#c5c6c8",
+                    "surface": "#f9f9ff",
+                    "secondary": "#5f5e5e",
+                    "on-primary-fixed-variant": "#92001d",
+                    "on-tertiary-fixed-variant": "#444749",
+                    "primary-container": "#e31837",
+                    "tertiary-fixed": "#e1e2e4",
+                    "on-background": "#151c27",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#d3daea",
+                    "on-primary-container": "#fffaf9",
+                    "tertiary-container": "#727476",
+                    "surface-container": "#e7eefe",
+                    "outline-variant": "#e6bdbb",
+                    "surface-bright": "#f9f9ff",
+                    "inverse-surface": "#2a313d",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-surface-variant": "#5d3f3e",
+                    "surface-tint": "#bf0029",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "surface-container-highest": "#dce2f3",
+                    "on-surface": "#151c27",
+                    "inverse-on-surface": "#ebf1ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "base": "4px",
+                    "xs": "0.5rem",
+                    "gutter": "16px",
+                    "md": "1.5rem",
+                    "margin-desktop": "32px",
+                    "max-width": "1280px",
+                    "xl": "4rem",
+                    "margin-mobile": "16px",
+                    "lg": "2.5rem",
+                    "sm": "1rem"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "headline-md-mobile": ["Inter"],
+                    "title-lg": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-md": ["30px", {"lineHeight": "38px", "fontWeight": "700"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+                    "headline-md-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 bg-surface dark:bg-inverse-surface border-b border-outline-variant dark:border-outline shadow-sm">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-max-width mx-auto">
+<a class="font-headline-md text-headline-md font-extrabold tracking-tight text-primary dark:text-inverse-primary scale-100 active:scale-95 transition-transform" href="#">
+                Sri Maruthi Motors
+            </a>
+<div class="hidden md:flex items-center gap-lg">
+<div class="flex gap-md"><a class="font-label-md text-label-md text-primary dark:text-inverse-primary border-b-2 border-primary dark:border-inverse-primary pb-1" href="#">Home</a><a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Inventory</a><a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Service</a><a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">About Us</a><a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Contact</a></div>
+<button class="bg-primary-container text-on-primary-container px-sm py-xs rounded-lg font-label-md text-label-md hover:brightness-110 active:scale-95 transition-all">
+                    Book Test Ride
+                </button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<!-- Mobile Nav (Hidden by default) -->
+<div class="hidden md:hidden bg-surface-container-low border-t border-outline-variant px-margin-mobile py-sm flex flex-col gap-sm" id="mobile-menu"><a class="font-label-md text-label-md text-primary py-xs" href="#">Home</a><a class="font-label-md text-label-md text-secondary py-xs" href="#">Inventory</a><a class="font-label-md text-label-md text-secondary py-xs" href="#">Service</a><a class="font-label-md text-label-md text-secondary py-xs" href="#">About Us</a><a class="font-label-md text-label-md text-secondary py-xs" href="#">Contact</a><button class="bg-primary text-on-primary w-full py-sm rounded-lg font-label-md uppercase tracking-wider">Book Test Ride</button></div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[85vh] w-full flex items-center overflow-hidden animate-fade-in" style="opacity: 0;">
+<div class="absolute inset-0 z-0" data-alt="A cinematic, high-speed photography shot of a sleek Hero Splendor motorcycle parked on a modern asphalt road during golden hour. The background shows a minimalist industrial architectural structure with a clear sunset sky. The lighting is dramatic, highlighting the chrome finishes and the vibrant red accents of the bike. The overall atmosphere is professional, premium, and authoritative, consistent with a high-end automotive dealership brand." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCx4xEgNGEt58GkG1t6-NUdek-1Bm8f8zhIE1jKoKf4CrvBjC0L2Pi7zKbnKJphCbpwtyp0-8jIIU7w2yLh0I69Uq2GojD7OshEwI2iGjX-VfCw6us_h_jgoSJCMAeE85_mWW_flyaa70h2XLctlgHIz8FOPkm6LqPLXbEFin0kGU7RDqEgkNQ_DSldoxdBA9M7H7-8SEKHlZ0KcW8xm7SreLedC3WEeM-lHcASSo8F5uw06WOj5phNZ8Cf-MGA-L6KQPYtSxJRM-8')"></div>
+<div class="absolute inset-0 z-10 hero-overlay"></div>
+<div class="relative z-20 max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop w-full animate-fade-in">
+<div class="max-w-2xl text-on-primary">
+<span class="inline-block bg-primary px-3 py-1 rounded-full text-label-md font-label-md mb-md uppercase tracking-widest">Authorized Hero Dealership</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-sm">
+                        Welcome to Sri Maruthi Motors - Bargur's Trusted Hero Dealership
+                    </h1>
+<p class="font-title-lg text-title-lg mb-lg text-surface-variant opacity-90">
+                        Seasonal Discounts! Save ₹3,000 to ₹5,000 on select models. Elevate your ride today.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-sm">
+<button class="bg-primary text-on-primary px-xl py-4 rounded-lg font-title-lg hover:bg-[#92001d] transition-colors shadow-lg active:scale-95 flex items-center justify-center gap-2">
+                            Explore Models
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-xl py-4 rounded-lg font-title-lg hover:bg-white/20 transition-colors active:scale-95">
+                            Locate Showroom
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Us Section -->
+<section class="py-xl bg-surface-container-lowest animate-fade-in" style="opacity: 0;">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-xl">
+<h2 class="font-headline-md text-headline-md text-on-background">Why Choose Sri Maruthi Motors?</h2>
+<div class="w-20 h-1 bg-primary mx-auto mt-xs"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<!-- Feature 1 -->
+<div class="p-lg bg-surface border border-outline-variant rounded-xl text-center group hover:shadow-lg transition-all duration-300">
+<div class="w-16 h-16 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">verified</span>
+</div>
+<h3 class="font-title-lg text-title-lg mb-sm">Authorized Dealer</h3>
+<p class="font-body-md text-body-md text-secondary">Official Hero MotoCorp partner in Bargur, ensuring full warranty and genuine retail experience.</p>
+</div>
+<!-- Feature 2 -->
+<div class="p-lg bg-surface border border-outline-variant rounded-xl text-center group hover:shadow-lg transition-all duration-300">
+<div class="w-16 h-16 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">settings</span>
+</div>
+<h3 class="font-title-lg text-title-lg mb-sm">Genuine Parts</h3>
+<p class="font-body-md text-body-md text-secondary">Every component we sell or fit is 100% genuine, designed specifically for your Hero vehicle's longevity.</p>
+</div>
+<!-- Feature 3 -->
+<div class="p-lg bg-surface border border-outline-variant rounded-xl text-center group hover:shadow-lg transition-all duration-300">
+<div class="w-16 h-16 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">build</span>
+</div>
+<h3 class="font-title-lg text-title-lg mb-sm">Expert Service</h3>
+<p class="font-body-md text-body-md text-secondary">Highly skilled technicians trained directly by Hero to provide the best maintenance for your motorcycle.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Models -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto animate-fade-in" style="opacity: 0;">
+<div class="flex justify-between items-end mb-lg">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-background">Featured Models</h2>
+<p class="text-secondary font-body-md">The latest performance and style from Hero MotoCorp</p>
+</div>
+<a class="hidden md:flex items-center gap-1 text-primary font-title-lg hover:underline" href="#">
+                    View Full Inventory <span class="material-symbols-outlined">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+<!-- Card 1: Splendor Plus -->
+<div class="group bg-white rounded-xl border border-outline-variant overflow-hidden hover:shadow-xl transition-all duration-500 flex flex-col h-full">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" data-alt="A clean studio product shot of the Hero Splendor Plus motorcycle in a glossy black and silver color scheme. The bike is positioned at a 3/4 angle against a minimalist light gray background. Soft professional studio lighting highlights the engine details and the high-quality paint finish. The aesthetic is clean, engineered, and professional." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC2DHHKdWY3d5Byse5KC4xuNCNxGGMUdJSWXgn5QEO_IXx1bPAYpZWDtpus_lop4J83IvD9-XpyJXfaRT2QHo2tvY3VUjq9p_vDfRTOXyU8wQoZvygjWfC3WwBDEkPmfNRt3cN0Km17OoXMhkTzNNLvwIw1xx6_qfJ00hEeK2nHUU_AcFrnkkJFX-eOdmo8BjpXgCikxXZHguXTHqbqej4BjKoyHGDZzWZYWkzBA49-K5d8HMQf1XgmlbMtGThKQagaZ-2USiT3iHg')"></div>
+<div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded text-label-md font-label-md">BEST SELLER</div>
+</div>
+<div class="p-lg flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-sm">
+<h3 class="font-headline-md text-headline-md">Hero Splendor Plus</h3>
+<span class="font-headline-md text-primary">₹75,441*</span>
+</div>
+<div class="grid grid-cols-2 gap-md mb-lg py-sm border-y border-outline-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">enable</span>
+<span class="text-body-sm font-label-md">97.2cc Air Cooled</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">speed</span>
+<span class="text-body-sm font-label-md">8.02 PS Power</span>
+</div>
+</div>
+<div class="mt-auto flex gap-sm">
+<button class="flex-1 bg-primary text-on-primary py-3 rounded-lg font-title-lg hover:brightness-110 transition-all active:scale-95">Inquire</button>
+<button class="px-4 border border-outline text-on-surface hover:bg-surface-container transition-colors rounded-lg">
+<span class="material-symbols-outlined align-middle">share</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: Destini -->
+<div class="group bg-white rounded-xl border border-outline-variant overflow-hidden hover:shadow-xl transition-all duration-500 flex flex-col h-full">
+<div class="relative h-64 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700" data-alt="A sophisticated studio shot of the Hero Destini 125 XTEC scooter in a premium matte metallic blue. The scooter is presented in a brightly lit, modern showroom environment with white reflective floors. The focus is on the sleek design lines and the digital console. The overall feel is premium, reliable, and modern corporate." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC6a2CUvpEgLSnj2NH88b9fRWb6-ymS19J6IgJWBsM7BDZz8Xx7u9Ddpqs5-j378IKom436jysliiMdJiGsubOuEarcOpmQby7Fc2MxLvM2AbTNwP9aK52lehQo09HLeeYgGCFRXcwyIPGzKLq9yTgAbCVwSYeXOF6szSg0iSxngPgccVaNp0EuGL2ILIUfpLgcF7Acrj2UaqNfBeNMIxVewF6arfJTicJ0j0mfVj3y27MZNkxwyNgVzRE8Pe1wRQliz4fDpBBZdeA')"></div>
+<div class="absolute top-4 left-4 bg-inverse-surface text-on-primary px-3 py-1 rounded text-label-md font-label-md">XTEC EDITION</div>
+</div>
+<div class="p-lg flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-sm">
+<h3 class="font-headline-md text-headline-md">Hero Destini 125</h3>
+<span class="font-headline-md text-primary">₹80,048*</span>
+</div>
+<div class="grid grid-cols-2 gap-md mb-lg py-sm border-y border-outline-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">enable</span>
+<span class="text-body-sm font-label-md">124.6cc SI Engine</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">ev_station</span>
+<span class="text-body-sm font-label-md">i3S Technology</span>
+</div>
+</div>
+<div class="mt-auto flex gap-sm">
+<button class="flex-1 bg-primary text-on-primary py-3 rounded-lg font-title-lg hover:brightness-110 transition-all active:scale-95">Inquire</button>
+<button class="px-4 border border-outline text-on-surface hover:bg-surface-container transition-colors rounded-lg">
+<span class="material-symbols-outlined align-middle">share</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="bg-primary py-xl animate-fade-in" style="opacity: 0;">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop text-center text-on-primary">
+<h2 class="font-display-lg-mobile md:font-headline-md mb-sm">Stay Updated on New Launches</h2>
+<p class="font-body-md mb-lg opacity-90 max-w-xl mx-auto">Join our community and be the first to know about seasonal discounts, exchange offers, and new Hero model launches in Bargur.</p>
+<form class="flex flex-col sm:flex-row gap-xs max-w-lg mx-auto" onsubmit="event.preventDefault(); alert('Subscribed!')">
+<input class="flex-grow px-sm py-4 rounded-lg bg-white text-on-background border-none focus:ring-2 focus:ring-on-primary-fixed-variant" placeholder="Enter your email address" required="" type="email">
+<button class="bg-inverse-surface text-on-primary px-lg py-4 rounded-lg font-title-lg hover:opacity-90 transition-opacity" type="submit">Subscribe</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-inverse-surface dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-xl px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<!-- Brand & Location -->
+<div class="flex flex-col gap-sm">
+<span class="font-title-lg text-title-lg font-bold text-on-primary">Sri Maruthi Motors</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant opacity-80">Your trusted destination for everything Hero MotoCorp in Bargur. Sales, Service, and Spares under one roof.</p>
+<div class="flex items-center gap-2 text-on-primary mt-sm">
+<span class="material-symbols-outlined text-primary-fixed">location_on</span>
+<span class="font-label-md text-label-md">Bargur, Tamil Nadu - 635104</span>
+</div>
+</div>
+<!-- Quick Links -->
+<div class="flex flex-col gap-sm">
+<h4 class="font-label-md text-label-md text-on-primary-container font-bold uppercase tracking-wider">Quick Links</h4>
+<div class="flex flex-col gap-xs">
+<a class="font-label-md text-label-md text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-colors" href="#">Contact Us</a>
+<a class="font-label-md text-label-md text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-colors" href="#">Service Booking</a>
+<a class="font-label-md text-label-md text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-colors" href="#">About Us</a><a class="font-label-md text-label-md text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+<!-- Social & Hours -->
+<div class="flex flex-col gap-sm">
+<h4 class="font-label-md text-label-md text-on-primary-container font-bold uppercase tracking-wider">Showroom Hours</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant opacity-80">Monday - Saturday: 09:00 AM - 08:00 PM</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant opacity-80">Sunday: Closed</p>
+<div class="flex gap-md mt-sm">
+<a class="text-on-primary hover:text-primary-fixed-dim transition-colors" href="#"><span class="material-symbols-outlined">face_nod</span></a>
+<a class="text-on-primary hover:text-primary-fixed-dim transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+</div>
+</div>
+</div>
+<div class="bg-black/20 py-sm text-center">
+<p class="font-label-md text-label-md text-on-surface-variant opacity-60">
+                © 2024 Sri Maruthi Motors (Hero MotoCorp Dealership). All rights reserved.
+            </p>
+</div>
+</footer>
+<!-- FAB for mobile service booking -->
+<button class="fixed bottom-margin-mobile right-margin-mobile md:hidden bg-primary text-on-primary w-14 h-14 rounded-full shadow-xl flex items-center justify-center z-40 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-3xl">build_circle</span>
+</button>
+<script>
+        // Smooth reveal on scroll interaction
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            observer.observe(section);
+        });
+    </script>
+
+
+</body></html>

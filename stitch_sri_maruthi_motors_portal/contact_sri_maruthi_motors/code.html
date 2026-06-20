@@ -1,0 +1,345 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Contact Us | Sri Maruthi Motors</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#dce2f3",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#595b5d",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#191c1e",
+                    "background": "#f9f9ff",
+                    "on-secondary-container": "#656464",
+                    "primary-fixed-dim": "#ffb3b1",
+                    "surface-container-low": "#f0f3ff",
+                    "on-primary-fixed": "#410007",
+                    "primary": "#b90027",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-container": "#fafbfd",
+                    "inverse-primary": "#ffb3b1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "outline": "#916e6d",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#474646",
+                    "primary-fixed": "#ffdad8",
+                    "surface-container-high": "#e2e8f8",
+                    "secondary-container": "#e5e2e1",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#c5c6c8",
+                    "surface": "#f9f9ff",
+                    "secondary": "#5f5e5e",
+                    "on-primary-fixed-variant": "#92001d",
+                    "on-tertiary-fixed-variant": "#444749",
+                    "primary-container": "#e31837",
+                    "tertiary-fixed": "#e1e2e4",
+                    "on-background": "#151c27",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#d3daea",
+                    "on-primary-container": "#fffaf9",
+                    "tertiary-container": "#727476",
+                    "surface-container": "#e7eefe",
+                    "outline-variant": "#e6bdbb",
+                    "surface-bright": "#f9f9ff",
+                    "inverse-surface": "#2a313d",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-surface-variant": "#5d3f3e",
+                    "surface-tint": "#bf0029",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "surface-container-highest": "#dce2f3",
+                    "on-surface": "#151c27",
+                    "inverse-on-surface": "#ebf1ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "base": "4px",
+                    "xs": "0.5rem",
+                    "gutter": "16px",
+                    "md": "1.5rem",
+                    "margin-desktop": "32px",
+                    "max-width": "1280px",
+                    "xl": "4rem",
+                    "margin-mobile": "16px",
+                    "lg": "2.5rem",
+                    "sm": "1rem"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "headline-md-mobile": ["Inter"],
+                    "title-lg": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-md": ["30px", {"lineHeight": "38px", "fontWeight": "700"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+                    "headline-md-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .split-container {
+        min-height: calc(100vh - 80px);
+      }
+      .input-focus-effect:focus {
+        border-color: #b90027;
+        box-shadow: 0 0 0 1px #b90027;
+        outline: none;
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-surface dark:bg-inverse-surface border-b border-outline-variant dark:border-outline shadow-sm">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-max-width mx-auto">
+<div class="font-headline-md text-headline-md font-extrabold tracking-tight text-primary dark:text-inverse-primary">
+                Sri Maruthi Motors
+            </div>
+<div class="hidden md:flex items-center space-x-lg"><a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Home</a><a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Inventory</a><a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Service</a><a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">About Us</a><a class="font-label-md text-label-md text-primary dark:text-inverse-primary border-b-2 border-primary dark:border-inverse-primary pb-1" href="#">Contact</a></div>
+<button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md uppercase tracking-wider scale-100 active:scale-95 transition-transform hover:bg-opacity-90">
+                Book Test Ride
+            </button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-xl">
+<!-- Hero Header -->
+<div class="mb-xl text-center md:text-left">
+<span class="inline-block px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant font-label-md text-label-md rounded-lg mb-sm">GET IN TOUCH</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-xs">Contact Our Team</h1>
+<p class="text-secondary font-body-md text-body-md max-w-2xl">Have questions about our Hero motorcycles or need to schedule a service? We're here to help you get on the road.</p>
+</div>
+<!-- Split Screen Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-start">
+<!-- Left: Contact Form -->
+<div class="bg-surface-container-lowest p-md md:p-lg rounded-xl border border-outline-variant shadow-sm">
+<h2 class="font-headline-md-mobile md:font-headline-md text-headline-md-mobile md:text-headline-md mb-md text-on-surface">Send a Message</h2>
+<form class="space-y-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="space-y-xs">
+<label class="font-label-md text-label-md text-secondary block uppercase">First Name</label>
+<input class="w-full bg-surface-container px-4 py-3 rounded-lg border border-outline-variant font-body-md text-body-md input-focus-effect transition-all" placeholder="John" type="text">
+</div>
+<div class="space-y-xs">
+<label class="font-label-md text-label-md text-secondary block uppercase">Last Name</label>
+<input class="w-full bg-surface-container px-4 py-3 rounded-lg border border-outline-variant font-body-md text-body-md input-focus-effect transition-all" placeholder="Doe" type="text">
+</div>
+</div>
+<div class="space-y-xs">
+<label class="font-label-md text-label-md text-secondary block uppercase">Email Address</label>
+<input class="w-full bg-surface-container px-4 py-3 rounded-lg border border-outline-variant font-body-md text-body-md input-focus-effect transition-all" placeholder="john.doe@example.com" type="email">
+</div>
+<div class="space-y-xs">
+<label class="font-label-md text-label-md text-secondary block uppercase">Phone Number</label>
+<input class="w-full bg-surface-container px-4 py-3 rounded-lg border border-outline-variant font-body-md text-body-md input-focus-effect transition-all" placeholder="+91 XXXXX XXXXX" type="tel">
+</div>
+<div class="space-y-xs">
+<label class="font-label-md text-label-md text-secondary block uppercase">Message</label>
+<textarea class="w-full bg-surface-container px-4 py-3 rounded-lg border border-outline-variant font-body-md text-body-md input-focus-effect transition-all resize-none" placeholder="How can we assist you today?" rows="4"></textarea>
+</div>
+<button class="w-full md:w-auto bg-primary text-on-primary px-xl py-4 rounded-lg font-title-lg text-title-lg font-bold scale-100 active:scale-95 transition-transform hover:brightness-110 shadow-lg flex items-center justify-center gap-2" type="submit">
+                        Send Message
+                        <span class="material-symbols-outlined">send</span>
+</button>
+</form>
+</div>
+<!-- Right: Contact Info Card -->
+<div class="space-y-lg">
+<div class="relative overflow-hidden rounded-xl bg-inverse-surface text-on-primary p-md md:p-lg border border-outline">
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-primary opacity-20 rounded-full blur-3xl"></div>
+<h2 class="font-headline-md-mobile md:font-headline-md text-headline-md-mobile md:text-headline-md mb-lg relative z-10">Reach Us Directly</h2>
+<div class="space-y-lg relative z-10">
+<!-- Address -->
+<div class="flex items-start gap-md">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-container">location_on</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary-fixed-dim mb-1">Our Location</h3>
+<p class="font-body-md text-body-md leading-relaxed opacity-90">
+                                    No.91/1, St-1 Endu Chetty Street,<br>
+                                    Bargur, Krishnagiri District,<br>
+                                    Tamil Nadu - 635104
+                                </p>
+</div>
+</div>
+<!-- Phone -->
+<div class="flex items-start gap-md">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-container">phone_in_talk</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary-fixed-dim mb-1">Call Us</h3>
+<p class="font-body-md text-body-md font-bold text-headline-md-mobile">+91 9003300771</p>
+<p class="font-body-sm text-body-sm opacity-70">Mon - Sat: 9:00 AM - 7:30 PM</p>
+</div>
+</div>
+<!-- Email -->
+<div class="flex items-start gap-md">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-container">mail</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary-fixed-dim mb-1">Email</h3>
+<p class="font-body-md text-body-md opacity-90">sales@srimaruthimotors.com</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Visual Card -->
+<div class="group relative rounded-xl overflow-hidden h-48 border border-outline-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A professional, close-up interior shot of a modern Hero MotoCorp showroom. Shiny red motorcycles are lined up on a polished white floor under bright, sophisticated architectural lighting. The scene communicates high-trust, professionalism, and a premium customer service environment in an automotive dealership setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhGT7XAkOkecsCTS-ehdwKe3f9uq7xdBOH57mbezX7yduDFv1q066u65OghDTA4UkXXAceHkZ0Me8z12tZ6ICY7yG-IkS2dxbt4XIf2ZR3FSuI_e8bplJ1YuUzV9gzaxXdeGv4v-VvGU8g4OhF0Uz6cZ3wTGZ9dwCEdcEkyacNzMISmcW62h3P_IusS3-69WJSw_9DBLb8IkcHg6kZyLjJ4mG3ytEYjTETwA_PJrczbuTO8kbdEt8bZcIV-mQ6KYL71bM2Fxwg5V0">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-md">
+<p class="text-white font-body-sm text-body-sm">Official Hero MotoCorp Dealer</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Styled Maps Visual Placeholder -->
+<div class="mt-xl">
+<div class="mb-md flex items-center justify-between">
+<h2 class="font-headline-md-mobile md:font-headline-md text-headline-md-mobile md:text-headline-md text-on-surface">Find us in Bargur</h2>
+<button class="text-primary font-label-md text-label-md flex items-center gap-xs hover:underline">
+                    OPEN IN GOOGLE MAPS
+                    <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+<div class="relative w-full h-[400px] rounded-xl overflow-hidden border border-outline-variant shadow-lg group">
+<!-- Visual Map Placeholder Background -->
+<div class="absolute inset-0 bg-surface-container-high flex items-center justify-center">
+<div class="w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+<div class="absolute inset-0 flex items-center justify-center" data-location="Bargur, Tamil Nadu">
+<div class="w-full h-full bg-cover bg-center" data-alt="A stylized, high-contrast digital map interface showing the city of Bargur, Tamil Nadu. The map uses a sophisticated dark mode aesthetic with red highlights and modern UI elements like location pins and clean typography. The lighting is crisp, and the overall style feels high-tech and precise." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjJKly3ohAVUBeADq8sJvBPxI0bYHZpC4yEaRj9xMzr_5dpwgPFbbX8-ITU0cQEp6ZqA6RuBlhLA6HVMopvCqAB7ssGvfRE-536_6bcnaKgpe3JKaC1JM-dtMICqm5YXe_rKxENiqGsK9qDu7HRLuvRcfHV-rs3H63h1VNdPpMrXTZRtQB6y-vclpFc0Nsu1f9kTZjXZ5L7xqSZS2t2022REWkAsQcdjeJojVWQBMnQaILYKvST7oqZjvFC12OyV2RTCpPGnjR6mY')"></div>
+</div>
+</div>
+<!-- Interactive Pin Overlay -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<div class="relative">
+<div class="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-primary rounded-full animate-ping opacity-75"></div>
+<div class="w-8 h-8 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-xl border-4 border-white relative z-10">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">motorcycle</span>
+</div>
+<div class="absolute top-10 left-1/2 -translate-x-1/2 bg-white px-4 py-2 rounded-lg shadow-xl border border-outline-variant whitespace-nowrap">
+<p class="font-label-md text-label-md text-on-surface font-bold">Sri Maruthi Motors</p>
+<p class="text-[10px] text-secondary">Hero MotoCorp Dealership</p>
+</div>
+</div>
+</div>
+<!-- Map Controls Mockup -->
+<div class="absolute bottom-4 right-4 flex flex-col gap-2">
+<button class="w-10 h-10 bg-white rounded shadow-md flex items-center justify-center text-on-surface hover:bg-surface-container"><span class="material-symbols-outlined">add</span></button>
+<button class="w-10 h-10 bg-white rounded shadow-md flex items-center justify-center text-on-surface hover:bg-surface-container"><span class="material-symbols-outlined">remove</span></button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-inverse-surface dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-xl px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="space-y-md">
+<div class="font-title-lg text-title-lg font-bold text-on-primary">Sri Maruthi Motors</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant opacity-80 leading-relaxed max-w-xs">
+                    The leading Hero MotoCorp dealership in Bargur, providing exceptional sales and service experience for over a decade.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-md">
+<div class="space-y-sm">
+<h4 class="font-label-md text-label-md text-primary-fixed-dim uppercase tracking-widest">Quick Links</h4>
+<ul class="space-y-xs">
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-colors" href="#">Inventory</a></li>
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-colors" href="#">Service Booking</a></li>
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-colors" href="#">Spare Parts</a></li>
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-colors" href="#">Careers</a></li>
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-colors" href="#">About Us</a></li></ul>
+</div>
+<div class="space-y-sm">
+<h4 class="font-label-md text-label-md text-primary-fixed-dim uppercase tracking-widest">Support</h4>
+<ul class="space-y-xs">
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-colors" href="#">Privacy Policy</a></li>
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-colors" href="#">Contact Us</a></li>
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="space-y-md">
+<h4 class="font-label-md text-label-md text-primary-fixed-dim uppercase tracking-widest">Connect</h4>
+<div class="flex gap-md">
+<a class="w-10 h-10 rounded-full bg-on-secondary-fixed-variant flex items-center justify-center text-on-primary hover:bg-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined">face_nod</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-on-secondary-fixed-variant flex items-center justify-center text-on-primary hover:bg-primary transition-all duration-300" href="#">
+<span class="material-symbols-outlined">share_reviews</span>
+</a>
+</div>
+<div class="mt-lg">
+<p class="font-label-md text-label-md text-on-surface-variant opacity-60">© 2024 Sri Maruthi Motors (Hero MotoCorp Dealership). All rights reserved.</p>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions
+        document.querySelectorAll('form input, form textarea').forEach(element => {
+            element.addEventListener('focus', () => {
+                element.parentElement.querySelector('label').classList.add('text-primary');
+            });
+            element.addEventListener('blur', () => {
+                element.parentElement.querySelector('label').classList.remove('text-primary');
+            });
+        });
+
+        // Form submission animation (mock)
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = form.querySelector('button');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<span class="material-symbols-outlined animate-spin">refresh</span> Sending...';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.innerHTML = '<span class="material-symbols-outlined">check_circle</span> Sent Successfully';
+                btn.classList.replace('bg-primary', 'bg-green-600');
+                form.reset();
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.classList.replace('bg-green-600', 'bg-primary');
+                    btn.disabled = false;
+                }, 3000);
+            }, 1500);
+        });
+    </script>
+
+
+</body></html>

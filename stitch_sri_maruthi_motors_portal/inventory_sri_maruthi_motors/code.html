@@ -1,0 +1,493 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Inventory | Sri Maruthi Motors - Hero MotoCorp Dealership</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#dce2f3",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#595b5d",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#191c1e",
+                    "background": "#f9f9ff",
+                    "on-secondary-container": "#656464",
+                    "primary-fixed-dim": "#ffb3b1",
+                    "surface-container-low": "#f0f3ff",
+                    "on-primary-fixed": "#410007",
+                    "primary": "#b90027",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-container": "#fafbfd",
+                    "inverse-primary": "#ffb3b1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "outline": "#916e6d",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#474646",
+                    "primary-fixed": "#ffdad8",
+                    "surface-container-high": "#e2e8f8",
+                    "secondary-container": "#e5e2e1",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#c5c6c8",
+                    "surface": "#f9f9ff",
+                    "secondary": "#5f5e5e",
+                    "on-primary-fixed-variant": "#92001d",
+                    "on-tertiary-fixed-variant": "#444749",
+                    "primary-container": "#e31837",
+                    "tertiary-fixed": "#e1e2e4",
+                    "on-background": "#151c27",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#d3daea",
+                    "on-primary-container": "#fffaf9",
+                    "tertiary-container": "#727476",
+                    "surface-container": "#e7eefe",
+                    "outline-variant": "#e6bdbb",
+                    "surface-bright": "#f9f9ff",
+                    "inverse-surface": "#2a313d",
+                    "on-error": "#ffffff",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-surface-variant": "#5d3f3e",
+                    "surface-tint": "#bf0029",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "surface-container-highest": "#dce2f3",
+                    "on-surface": "#151c27",
+                    "inverse-on-surface": "#ebf1ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "base": "4px",
+                    "xs": "0.5rem",
+                    "gutter": "16px",
+                    "md": "1.5rem",
+                    "margin-desktop": "32px",
+                    "max-width": "1280px",
+                    "xl": "4rem",
+                    "margin-mobile": "16px",
+                    "lg": "2.5rem",
+                    "sm": "1rem"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "headline-md-mobile": ["Inter"],
+                    "title-lg": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-md": ["30px", {"lineHeight": "38px", "fontWeight": "700"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+                    "headline-md-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased">
+<!-- TopNavBar Shell -->
+<header class="sticky top-0 w-full z-50 bg-surface dark:bg-inverse-surface border-b border-outline-variant dark:border-outline shadow-sm">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-max-width mx-auto">
+<div class="flex items-center gap-2">
+<span class="font-headline-md-mobile md:font-headline-md text-headline-md-mobile md:text-headline-md font-extrabold tracking-tight text-primary dark:text-inverse-primary">Sri Maruthi Motors</span>
+</div>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex gap-8 items-center"><a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Home</a><a class="font-label-md text-label-md text-primary dark:text-inverse-primary border-b-2 border-primary dark:border-inverse-primary pb-1" href="#">Inventory</a><a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Service</a><a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">About Us</a><a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Contact</a><button class="bg-primary text-on-primary px-6 py-2 font-label-md text-label-md rounded-lg scale-100 active:scale-95 transition-transform">Book Test Ride</button></nav>
+<!-- Mobile Menu Trigger -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="min-h-screen">
+<!-- Hero Header -->
+<section class="relative py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low overflow-hidden">
+<div class="max-w-max-width mx-auto relative z-10">
+<span class="bg-primary-container text-on-primary-container font-label-md text-label-md px-3 py-1 rounded-full inline-block mb-4">Official Hero Dealership</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-4">Current Inventory</h1>
+<p class="font-body-md text-body-md text-secondary max-w-2xl">Explore our wide range of Hero motorcycles and scooters. Engineered for performance, reliability, and the Indian roads.</p>
+</div>
+<div class="absolute -right-20 -bottom-20 opacity-5 pointer-events-none hidden md:block">
+<span class="material-symbols-outlined text-[300px]">motorcycle</span>
+</div>
+</section>
+<!-- Filters & Search -->
+<section class="sticky top-[72px] bg-surface z-40 border-b border-outline-variant py-4 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-max-width mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-center gap-2 overflow-x-auto hide-scrollbar pb-2 md:pb-0">
+<button class="px-6 py-2 bg-primary text-on-primary rounded-full font-label-md text-label-md whitespace-nowrap shadow-md">All Vehicles</button>
+<button class="px-6 py-2 bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-full font-label-md text-label-md whitespace-nowrap border border-outline-variant">Motorcycles</button>
+<button class="px-6 py-2 bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-full font-label-md text-label-md whitespace-nowrap border border-outline-variant">Scooters</button>
+<button class="px-6 py-2 bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors rounded-full font-label-md text-label-md whitespace-nowrap border border-outline-variant">Premium</button>
+</div>
+<div class="relative group">
+<input class="w-full md:w-64 bg-surface-container-lowest border border-outline-variant rounded-lg px-10 py-2 font-body-sm text-body-sm focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="Search models..." type="text">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm">search</span>
+</div>
+</div>
+</section>
+<!-- Inventory Grid -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Hero Splendor Plus -->
+<div class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="h-64 relative overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A studio photograph of a Hero Splendor Plus motorcycle in high-gloss black with red accents, set against a minimalist light grey background. The lighting is crisp and highlights the engineered metallic details of the engine and the sleek frame. The image exudes a modern, corporate automotive aesthetic with high contrast and sharp focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvXyxZ4EcN2pqdXGXB5bMAPv9O-KlU1wYhw9W905fSkbzli86F63jlg66QG9Xuqo4BJCz_3YwLyfUOtJfqzHzlpdkkwsr8DpuN95cKoBEabs3bJrfzvMS8nfoLBPMeuZEF7Gt6JnTHfZidJ77NtMr2btbiifOBlCShii-5ff_1yZccO4ANVs1dFUY7t-0mCEqiRldlIJc5K5bh1TgxtHOjZblUrwkBxPcB3H-U1MrskxXk2vPU3dQsDQIOaoTqzajzrdQer9-fYY4">
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-on-primary font-label-md text-label-md px-2 py-1 rounded-lg">Best Seller</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-lg text-title-lg text-on-surface">Hero Splendor Plus</h3>
+<span class="font-title-lg text-title-lg text-primary">₹75,441*</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-4">India's most trusted commuter with i3S technology.</p>
+<div class="grid grid-cols-2 gap-4 mb-6 py-4 border-y border-outline-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">settings</span>
+<span class="font-label-md text-label-md text-on-surface-variant">97.2 cc</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">speed</span>
+<span class="font-label-md text-label-md text-on-surface-variant">8.02 PS</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">local_gas_station</span>
+<span class="font-label-md text-label-md text-on-surface-variant">70+ kmpl</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">battery_charging_full</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Self Start</span>
+</div>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 bg-primary text-on-primary py-3 rounded-lg font-label-md text-label-md hover:brightness-110 active:scale-95 transition-all">Inquiry</button>
+<button class="px-3 border border-outline text-on-surface-variant rounded-lg hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Hero Destini -->
+<div class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="h-64 relative overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A premium Hero Destini 125 scooter in a matte bronze finish parked in a contemporary urban setting during golden hour. Soft sunrays illuminate the sculpted panels and chrome accents of the scooter. The background is a clean-lined modern concrete wall, emphasizing a sophisticated and reliable urban commuter vibe with a warm, inviting light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTg2XiEGH7PFY2DMyI5AHcNtzQk1ji8YyOaTyELJBp58pEN4b9bn5PCtbmv3RXnnIa9lhdBGwj_hb_eaLtbZ0g9ClaAgBQpQEy6pQ_MTbWFUIGeSTCwlK6ZZYICdlBulJT1WvWYClNhe0GhU_3LAChQf-XdaDXcX_Z7N86x9i5jETbYSemZC_6D6dGILExRqjZPD9SMKAx8KVZaf6wO7_sOSQYHLq98B9TTvUleFdWcW_LE3eZdwikdB2PChrBauzqHG9ujX58eZQ">
+<div class="absolute top-4 left-4">
+<span class="bg-surface-variant text-on-surface-variant font-label-md text-label-md px-2 py-1 rounded-lg">Scooter</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-lg text-title-lg text-on-surface">Hero Destini 125</h3>
+<span class="font-title-lg text-title-lg text-primary">₹80,048*</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-4">Premium style meets 125cc performance.</p>
+<div class="grid grid-cols-2 gap-4 mb-6 py-4 border-y border-outline-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">settings</span>
+<span class="font-label-md text-label-md text-on-surface-variant">124.6 cc</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">speed</span>
+<span class="font-label-md text-label-md text-on-surface-variant">9.12 PS</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">bluetooth</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Connected</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">luggage</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Large Boot</span>
+</div>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 bg-primary text-on-primary py-3 rounded-lg font-label-md text-label-md hover:brightness-110 active:scale-95 transition-all">Inquiry</button>
+<button class="px-3 border border-outline text-on-surface-variant rounded-lg hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Xpulse 200T -->
+<div class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="h-64 relative overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A dynamic shot of a Hero Xpulse 200T touring motorcycle in matte black and silver, positioned on a scenic winding road at dawn. The scene is mist-covered with high-contrast morning light reflecting off the bike's LED headlights. The mood is adventurous and technical, showcasing the rugged engineering of the suspension and engine block in a minimalist outdoor landscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsk_CJ_-nL4vjFjf39BAc7qn8fsdbd6dcqcsQKTsZY0rDKULQ8xp3g-5TFl31pbgPqr2aL53UZk6oaIScgJGGOwtJghn9yGKLSXRAkg9FUQ9NERZtTH7g7jfaWEmMDNHYe6J_s0QxlSss_W27vpC8GqjC6ov2NUVTRwlqvwbsw1gipZqWni744OGYDI6KaO4rw-N6tCInDHdPWKNUSBY9ryrfSeaYi5X7gLgokxE_qw4rTbf8scCqkdbpcL11yP9i96m0r8inoLtE">
+<div class="absolute top-4 left-4">
+<span class="bg-surface-container-high text-primary font-label-md text-label-md px-2 py-1 rounded-lg">Tourer</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-lg text-title-lg text-on-surface">Xpulse 200T 4V</h3>
+<span class="font-title-lg text-title-lg text-primary">₹1,35,726*</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-4">The ultimate urban tourer with 4V technology.</p>
+<div class="grid grid-cols-2 gap-4 mb-6 py-4 border-y border-outline-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">settings</span>
+<span class="font-label-md text-label-md text-on-surface-variant">199.6 cc</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">speed</span>
+<span class="font-label-md text-label-md text-on-surface-variant">19.1 PS</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">navigation</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Turn-by-turn</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">shield</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Single ABS</span>
+</div>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 bg-primary text-on-primary py-3 rounded-lg font-label-md text-label-md hover:brightness-110 active:scale-95 transition-all">Inquiry</button>
+<button class="px-3 border border-outline text-on-surface-variant rounded-lg hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Passion XTEC -->
+<div class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="h-64 relative overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Front profile of a Hero Passion XTEC motorcycle in vibrant candy red, showcased in a sleek studio environment with professional rim lighting. The focus is on the advanced LED headlamp and the digital instrument cluster. The image has a clean, engineering-focused aesthetic with deep shadows and brilliant highlights, reflecting a modern corporate brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp1RpmYctpB4GD3Hh6QxP2vCAsPetDTa7amrxoZnCfgxFSTQFruZSdGeFpNGryqtWPe88Q1dFVYy3KaeDYTTDX77-BZqmP4MZAzFpvQ1DaPdz7OhDHNm2LW9kEhBEx3IQNrc92TbkIH_gT6GwgwQ1XHz8CzHTvOKBY2N5FtOOCsPJkcuhEGtopNi6yzQhZOT9ffSAXzhuhytiarxmORJ3PArweUY8cqQFzE3B3njAQBIQ2WWhHQqyhtUppT0bFszu1XOW3XolR-E0">
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-lg text-title-lg text-on-surface">Passion XTEC</h3>
+<span class="font-title-lg text-title-lg text-primary">₹79,538*</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-4">Style meets advanced technology features.</p>
+<div class="grid grid-cols-2 gap-4 mb-6 py-4 border-y border-outline-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">settings</span>
+<span class="font-label-md text-label-md text-on-surface-variant">110 cc</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">light</span>
+<span class="font-label-md text-label-md text-on-surface-variant">LED Headlamp</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">phone_iphone</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Call/SMS Alerts</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">flash_on</span>
+<span class="font-label-md text-label-md text-on-surface-variant">i3S Tech</span>
+</div>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 bg-primary text-on-primary py-3 rounded-lg font-label-md text-label-md hover:brightness-110 active:scale-95 transition-all">Inquiry</button>
+<button class="px-3 border border-outline text-on-surface-variant rounded-lg hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pleasure Plus -->
+<div class="group bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="h-64 relative overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A stylish Hero Pleasure Plus scooter in a bright yellow finish, parked on a clean, sun-drenched suburban street. The background features blurred modern architecture and green foliage. The photo has a bright, high-key lighting style that emphasizes a playful yet reliable character, consistent with the brand's accessible and authoritative automotive design language." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhH5fdsTZf9kbwP3DBL3jM0PgzxK5Sy9o4fzStAPiH8foQZs8Kg9jfPRXjlNHJJktIzAK49iCXGKWuU44DieE8xVmqTPpldxpTvDIwha9ilQpAT18vQrDKZnzRLslMJJldp37es79iG_om5Q55P8u08ds7OsUPHGALozkUcqZzG485gBNLByROe9Np5yfJSP1GqEeEzVL25fpfV2GJtvBk4yDNmZv9BefKbqzAd4A0km2T2SdBflEyHj-BBS8XRPjiIjE4tGA4w-g">
+<div class="absolute top-4 left-4">
+<span class="bg-surface-variant text-on-surface-variant font-label-md text-label-md px-2 py-1 rounded-lg">Scooter</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-lg text-title-lg text-on-surface">Pleasure+ XTEC</h3>
+<span class="font-title-lg text-title-lg text-primary">₹71,213*</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-4">Trendy, light-weight and full of features.</p>
+<div class="grid grid-cols-2 gap-4 mb-6 py-4 border-y border-outline-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">settings</span>
+<span class="font-label-md text-label-md text-on-surface-variant">110.9 cc</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">design_services</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Chrome Kit</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">bluetooth</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Bluetooth</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">visibility</span>
+<span class="font-label-md text-label-md text-on-surface-variant">LED Projector</span>
+</div>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 bg-primary text-on-primary py-3 rounded-lg font-label-md text-label-md hover:brightness-110 active:scale-95 transition-all">Inquiry</button>
+<button class="px-3 border border-outline text-on-surface-variant rounded-lg hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Call to Action Card -->
+<div class="bg-inverse-surface text-on-primary p-8 rounded-xl flex flex-col justify-center items-center text-center">
+<span class="material-symbols-outlined text-6xl text-primary mb-6">verified_user</span>
+<h3 class="font-headline-md text-headline-md mb-4">Don't see your choice?</h3>
+<p class="font-body-md text-body-md opacity-80 mb-8">We can help you source the perfect Hero model with tailored finance options and exchange offers.</p>
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-label-md text-label-md shadow-lg hover:translate-y-[-2px] transition-all">Talk to an Expert</button>
+</div>
+</div>
+</section>
+<!-- Comparison/CTA Bento Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant flex flex-col md:flex-row items-center gap-8">
+<div class="flex-1">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Exchange Your Old Bike</h2>
+<p class="font-body-md text-body-md text-secondary mb-6">Get the best market value for your current vehicle when you upgrade to a new Hero. Quick evaluation and instant credit.</p>
+<div class="flex gap-4">
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md text-primary">15+</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Checkpoints</span>
+</div>
+<div class="w-px h-12 bg-outline-variant"></div>
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md text-primary">30</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Min Valuation</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/3 aspect-square rounded-xl overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A focused close-up of a digital tablet showing a professional vehicle valuation report with charts and price estimates. The background is a clean, modern automotive service bay with soft, even lighting, conveying a sense of transparency and technical reliability in the exchange process." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU8UC1tJgID68TOHWFSrS5CwFm5axxjjq8qPUHuUkLjCYtChOY6LRiiKcgp-f6RcOxeqamq1nSD1NE16WoEL_wPanQ-FuFeSRSJQhU6e_6v9O6B7X5ai-OMXrtnk0tJhumg4DfFZOKf9ihEMZRHUa2fFV30RYNoNdPzXiOfM8uphhr6JVYK2DGW8lS9XZWScMxyXeqdspjJ_uHccsDfbnwCzo1zUxrKG9MFXpVNcmIvtr3wqANglD3OyXUUerGkXxWCNlx1jga6Jk">
+</div>
+</div>
+<div class="bg-primary p-8 rounded-2xl text-on-primary flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl mb-4">payments</span>
+<h3 class="font-title-lg text-title-lg mb-2">Easy Finance</h3>
+<p class="font-body-sm text-body-sm opacity-90">Low down-payment options and flexible EMI schemes from top banks.</p>
+</div>
+<a class="inline-flex items-center gap-2 mt-8 font-label-md text-label-md hover:underline" href="#">
+                            Calculate EMI <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full bg-inverse-surface dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-xl px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div>
+<span class="font-title-lg text-title-lg font-bold text-on-primary block mb-6">Sri Maruthi Motors</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant opacity-80 mb-6">Authorized Hero MotoCorp Dealership providing premium sales and service since 2010.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-primary opacity-60 hover:opacity-100 cursor-pointer">face_nod</span>
+<span class="material-symbols-outlined text-on-primary opacity-60 hover:opacity-100 cursor-pointer">share_location</span>
+<span class="material-symbols-outlined text-on-primary opacity-60 hover:opacity-100 cursor-pointer">call</span>
+</div>
+</div>
+<div class="flex flex-col gap-4"><span class="font-label-md text-label-md text-on-primary uppercase tracking-widest mb-2">Quick Links</span><a class="font-label-md text-label-md text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-colors" href="#">Home</a><a class="font-label-md text-label-md text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-colors" href="#">Inventory</a><a class="font-label-md text-label-md text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-colors" href="#">Service</a><a class="font-label-md text-label-md text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-colors" href="#">About Us</a><a class="font-label-md text-label-md text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-colors" href="#">Contact</a></div>
+<div class="flex flex-col gap-4">
+<span class="font-label-md text-label-md text-on-primary uppercase tracking-widest mb-2">Newsletter</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant opacity-80 mb-4">Stay updated with latest launches and offers.</p>
+<div class="flex">
+<input class="bg-surface-container border-none rounded-l-lg px-4 py-2 font-body-sm text-body-sm w-full outline-none text-on-surface" placeholder="Email Address" type="email">
+<button class="bg-primary text-on-primary px-4 py-2 rounded-r-lg font-label-md text-label-md">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-6 border-t border-outline opacity-30">
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">
+                © 2024 Sri Maruthi Motors (Hero MotoCorp Dealership). All rights reserved.
+            </p>
+</div>
+</footer>
+<!-- Inquiry Modal (Simple JS for Demo) -->
+<div class="fixed inset-0 z-[60] bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300" id="inquiry-modal">
+<div class="bg-surface w-full max-w-md rounded-2xl shadow-2xl overflow-hidden scale-95 transition-transform duration-300" id="modal-content">
+<div class="p-6 bg-primary text-on-primary flex justify-between items-center">
+<h3 class="font-title-lg text-title-lg">Product Inquiry</h3>
+<button class="material-symbols-outlined" onclick="toggleModal()">close</button>
+</div>
+<form class="p-6 space-y-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Full Name</label>
+<input class="w-full border border-outline-variant rounded-lg p-2 focus:ring-2 focus:ring-primary outline-none" placeholder="Your Name" type="text">
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Phone Number</label>
+<input class="w-full border border-outline-variant rounded-lg p-2 focus:ring-2 focus:ring-primary outline-none" placeholder="+91 00000 00000" type="tel">
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Interested Model</label>
+<select class="w-full border border-outline-variant rounded-lg p-2 focus:ring-2 focus:ring-primary outline-none">
+<option>Hero Splendor Plus</option>
+<option>Hero Destini 125</option>
+<option>Xpulse 200T 4V</option>
+<option>Passion XTEC</option>
+<option>Pleasure+ XTEC</option>
+</select>
+</div>
+<button class="w-full bg-primary text-on-primary py-3 rounded-lg font-label-md text-label-md mt-4" type="submit">Submit Inquiry</button>
+</form>
+</div>
+</div>
+<script>
+        function toggleModal() {
+            const modal = document.getElementById('inquiry-modal');
+            const content = document.getElementById('modal-content');
+            const isVisible = modal.classList.contains('opacity-100');
+            
+            if (isVisible) {
+                modal.classList.replace('opacity-100', 'opacity-0');
+                modal.classList.add('pointer-events-none');
+                content.classList.replace('scale-100', 'scale-95');
+            } else {
+                modal.classList.replace('opacity-0', 'opacity-100');
+                modal.classList.remove('pointer-events-none');
+                content.classList.replace('scale-95', 'scale-100');
+            }
+        }
+
+        // Attach to all inquiry buttons
+        document.querySelectorAll('button').forEach(btn => {
+            if (btn.innerText.includes('Inquiry')) {
+                btn.addEventListener('click', toggleModal);
+            }
+        });
+    </script>
+
+
+</body></html>

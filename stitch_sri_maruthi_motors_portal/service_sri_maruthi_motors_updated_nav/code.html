@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Service Center | Sri Maruthi Motors</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-variant": "#dce2f3",
+                      "on-error-container": "#93000a",
+                      "tertiary": "#595b5d",
+                      "error": "#ba1a1a",
+                      "on-tertiary-fixed": "#191c1e",
+                      "background": "#f9f9ff",
+                      "on-secondary-container": "#656464",
+                      "primary-fixed-dim": "#ffb3b1",
+                      "surface-container-low": "#f0f3ff",
+                      "on-primary-fixed": "#410007",
+                      "primary": "#b90027",
+                      "on-primary": "#ffffff",
+                      "on-tertiary-container": "#fafbfd",
+                      "inverse-primary": "#ffb3b1",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "outline": "#916e6d",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-fixed-variant": "#474646",
+                      "primary-fixed": "#ffdad8",
+                      "surface-container-high": "#e2e8f8",
+                      "secondary-container": "#e5e2e1",
+                      "error-container": "#ffdad6",
+                      "tertiary-fixed-dim": "#c5c6c8",
+                      "surface": "#f9f9ff",
+                      "secondary": "#5f5e5e",
+                      "on-primary-fixed-variant": "#92001d",
+                      "on-tertiary-fixed-variant": "#444749",
+                      "primary-container": "#e31837",
+                      "tertiary-fixed": "#e1e2e4",
+                      "on-background": "#151c27",
+                      "on-secondary": "#ffffff",
+                      "surface-dim": "#d3daea",
+                      "on-primary-container": "#fffaf9",
+                      "tertiary-container": "#727476",
+                      "surface-container": "#e7eefe",
+                      "outline-variant": "#e6bdbb",
+                      "surface-bright": "#f9f9ff",
+                      "inverse-surface": "#2a313d",
+                      "on-error": "#ffffff",
+                      "secondary-fixed": "#e5e2e1",
+                      "on-surface-variant": "#5d3f3e",
+                      "surface-tint": "#bf0029",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "surface-container-highest": "#dce2f3",
+                      "on-surface": "#151c27",
+                      "inverse-on-surface": "#ebf1ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "base": "4px",
+                      "xs": "0.5rem",
+                      "gutter": "16px",
+                      "md": "1.5rem",
+                      "margin-desktop": "32px",
+                      "max-width": "1280px",
+                      "xl": "4rem",
+                      "margin-mobile": "16px",
+                      "lg": "2.5rem",
+                      "sm": "1rem"
+              },
+              "fontFamily": {
+                      "body-md": ["Inter"],
+                      "display-lg": ["Inter"],
+                      "headline-md": ["Inter"],
+                      "display-lg-mobile": ["Inter"],
+                      "headline-md-mobile": ["Inter"],
+                      "title-lg": ["Inter"],
+                      "body-sm": ["Inter"],
+                      "label-md": ["Inter"]
+              },
+              "fontSize": {
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "headline-md": ["30px", {"lineHeight": "38px", "fontWeight": "700"}],
+                      "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+                      "headline-md-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                      "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                      "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                      "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+<!-- TopNavBar Component -->
+<nav class="sticky top-0 w-full z-50 bg-surface dark:bg-inverse-surface shadow-sm border-b border-outline-variant dark:border-outline">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-max-width mx-auto">
+<div class="flex items-center">
+<span class="font-headline-md text-headline-md font-extrabold tracking-tight text-primary dark:text-inverse-primary">Sri Maruthi Motors</span>
+</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center space-x-8"><a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Home</a>
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Inventory</a>
+<a class="font-label-md text-label-md text-primary dark:text-inverse-primary border-b-2 border-primary dark:border-inverse-primary pb-1" href="#">Service</a>
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">About Us</a>
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed-dim hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Contact</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md scale-100 active:scale-95 transition-transform">Book Test Ride</button></div>
+<!-- Mobile Menu Trigger -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section: Service Excellence -->
+<section class="relative w-full min-h-[614px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-inverse-surface/90 to-inverse-surface/40 z-10"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="A cinematic, wide-angle shot of a high-tech automotive service bay with pristine white floors and red tool cabinets. High-key clinical lighting highlights two-wheelers being serviced by professional technicians in clean uniforms. The overall atmosphere is organized, modern, and clinical, emphasizing the brand's commitment to precision engineering and mechanical expertise." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB6VtjIQjGjl9TSQG8JJD7ywBsAVmb16uMWx-nk23t2cV7IW0ELVMBH8rxKcHHoxVEbhMD6llL8532Tog4gMgb8GOz4WzrRFudPe9U7FgbqF9a4GtK-quSoRgacYvQ572WH5BgHPTiqHjLOMcSSUyspkTWeoXJoCLHy_fe8n5ePwDi1c5ezSf9RrfyTO7IuZirRiApGYtKgULKZNNw_ebsrnXBQzdA4FYV-Iw6NZdf6JbJLITG6kbJqzZe-M40RScbR8yHSmvx7HOk')"></div>
+</div>
+<div class="relative z-20 max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop w-full text-on-primary">
+<div class="max-w-2xl">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-4">Precision Care for Your Hero</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 opacity-90">Experience factory-standard service with genuine parts and expert technicians. We don't just repair; we revitalize your ride.</p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary hover:bg-primary-container text-on-primary px-8 py-4 rounded-lg font-title-lg transition-all duration-300" href="#service-booking">Book Now</a>
+<button class="border border-on-primary text-on-primary px-8 py-4 rounded-lg font-title-lg hover:bg-on-primary/10 transition-all duration-300">Our Services</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Service Features -->
+<section class="py-xl max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="mb-lg">
+<h2 class="font-headline-md text-headline-md mb-2">Why Trust Sri Maruthi Motors?</h2>
+<div class="w-20 h-1 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Large Feature: Expert Technicians -->
+<div class="md:col-span-8 bg-surface-container-low p-8 rounded-xl border border-outline-variant flex flex-col justify-between group hover:shadow-lg transition-shadow">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="engineering">engineering</span>
+<h3 class="font-title-lg text-title-lg mb-2">Factory-Certified Technicians</h3>
+<p class="text-secondary font-body-md">Our team undergoes rigorous training directly from Hero MotoCorp experts. We specialize in every nut, bolt, and sensor of your vehicle.</p>
+</div>
+<div class="mt-8 rounded-lg overflow-hidden h-48 bg-cover bg-center" data-alt="A close-up of a technician's hands using a digital diagnostic tool on a modern motorcycle engine. The lighting is sharp and technical, focusing on the interface of the tool showing a green 'Pass' signal. The setting is a clean, well-lit workshop with professional tools organized in the background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAkScEgUNnwm5a_tb09FP8h9Rwiuso7_5FqfYuJv-I8JRd0mKsLGIbztiDJGp4BJV8uUc4KawzU9Fvy3rVbeBpbvGKHL-jW5BDr63arsgxLZhU9yja6wi9VsMD3XjYRCMJ1aHK3Idm5Eiwl53szGATMx5YA2VopwV2xuNEcdhpdD7Dpg5a9m8_o64YGZVEP9XC2MbPUZvIuRukNQPXOHhIN4dQkWwy29Xa3L0Hs-r23Mwddo70ld8GjEP3NjRYWKrqcQS65gVwBwQc')"></div>
+</div>
+<!-- Small Feature: Genuine Parts -->
+<div class="md:col-span-4 bg-inverse-surface p-8 rounded-xl flex flex-col justify-center text-on-primary relative overflow-hidden group">
+<div class="absolute -right-8 -bottom-8 opacity-10 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-[120px]" data-icon="verified">verified</span>
+</div>
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl mb-4" data-icon="settings_suggest">settings_suggest</span>
+<h3 class="font-title-lg text-title-lg mb-2">100% Genuine Spare Parts</h3>
+<p class="text-on-surface-variant font-body-sm opacity-80">We exclusively use Hero Genuine Parts to ensure your vehicle's longevity, performance, and safety standards are never compromised.</p>
+</div>
+<!-- Feature: Fast Lane -->
+<div class="md:col-span-4 bg-surface-container p-8 rounded-xl border border-outline-variant hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="bolt">bolt</span>
+<h3 class="font-title-lg text-title-lg mb-2">60-Minute Service</h3>
+<p class="text-secondary font-body-sm">Express maintenance for your busy lifestyle. Standard check-ups completed in under an hour.</p>
+</div>
+<!-- Feature: Diagnostic Tech -->
+<div class="md:col-span-4 bg-surface-container p-8 rounded-xl border border-outline-variant hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="memory">memory</span>
+<h3 class="font-title-lg text-title-lg mb-2">Digital Diagnostics</h3>
+<p class="text-secondary font-body-sm">We use advanced computerized diagnostic systems to identify and resolve performance issues with pinpoint accuracy.</p>
+</div>
+<!-- Feature: Customer Lounge -->
+<div class="md:col-span-4 bg-surface-container p-8 rounded-xl border border-outline-variant hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="coffee">coffee</span>
+<h3 class="font-title-lg text-title-lg mb-2">Comfortable Lounge</h3>
+<p class="text-secondary font-body-sm">Relax in our AC waiting area with complimentary Wi-Fi and refreshments while we take care of your ride.</p>
+</div>
+</div>
+</section>
+<!-- Booking Section -->
+<section class="py-xl bg-surface-container-low relative" id="service-booking">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+<div>
+<span class="text-primary font-label-md uppercase tracking-widest mb-2 block">Appointment</span>
+<h2 class="font-display-lg-mobile md:font-headline-md text-display-lg-mobile md:text-headline-md mb-6">Schedule Your Visit</h2>
+<p class="text-secondary font-body-md mb-8">Ready to give your vehicle the care it deserves? Fill out the form, and our service coordinators will confirm your slot within 30 minutes.</p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="bg-primary/10 p-3 rounded-lg">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+</div>
+<div>
+<p class="font-title-lg text-title-lg">Bargur Branch</p>
+<p class="text-secondary font-body-sm">Main Road, Bargur, Tamil Nadu</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-primary/10 p-3 rounded-lg">
+<span class="material-symbols-outlined text-primary" data-icon="phone_in_talk">phone_in_talk</span>
+</div>
+<div>
+<p class="font-title-lg text-title-lg">Service Helpline</p>
+<p class="text-secondary font-body-sm">+91 98765 43210</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Form Card -->
+<div class="bg-surface-container-lowest p-8 md:p-10 rounded-2xl shadow-xl border border-outline-variant">
+<form class="space-y-6" id="serviceForm">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col space-y-2">
+<label class="font-label-md text-label-md text-secondary" for="fullName">Full Name</label>
+<input class="w-full bg-surface border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-primary focus:border-primary transition-all" id="fullName" name="fullName" placeholder="Enter your name" required="" type="text"/>
+</div>
+<div class="flex flex-col space-y-2">
+<label class="font-label-md text-label-md text-secondary" for="phone">Phone Number</label>
+<input class="w-full bg-surface border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-primary focus:border-primary transition-all" id="phone" name="phone" placeholder="10-digit mobile number" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col space-y-2">
+<label class="font-label-md text-label-md text-secondary" for="vehicleModel">Vehicle Model</label>
+<select class="w-full bg-surface border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-primary focus:border-primary transition-all" id="vehicleModel" name="vehicleModel" required="">
+<option disabled="" selected="" value="">Select Model</option>
+<option value="splendor">Hero Splendor Plus</option>
+<option value="hf-deluxe">Hero HF Deluxe</option>
+<option value="passion">Hero Passion XTEC</option>
+<option value="glamour">Hero Glamour</option>
+<option value="super-splendor">Hero Super Splendor</option>
+<option value="xpulse">Hero XPulse 200</option>
+<option value="destini">Hero Destini 125</option>
+<option value="pleasure">Hero Pleasure Plus</option>
+</select>
+</div>
+<div class="flex flex-col space-y-2">
+<label class="font-label-md text-label-md text-secondary" for="serviceDate">Preferred Date</label>
+<input class="w-full bg-surface border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-primary focus:border-primary transition-all" id="serviceDate" name="serviceDate" required="" type="date"/>
+</div>
+</div>
+<div class="flex flex-col space-y-2">
+<label class="font-label-md text-label-md text-secondary" for="serviceType">Service Type (Optional)</label>
+<textarea class="w-full bg-surface border-outline-variant rounded-lg p-3 focus:ring-2 focus:ring-primary focus:border-primary transition-all" id="serviceType" name="serviceType" placeholder="Tell us about the issue or maintenance required..." rows="3"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-title-lg hover:bg-primary-container shadow-md active:scale-[0.98] transition-all" type="submit">Book Appointment</button>
+<p class="text-center font-body-sm text-secondary">
+                            By booking, you agree to our <a class="text-primary hover:underline" href="#">Privacy Policy</a>.
+                        </p>
+</form>
+</div>
+</div>
+</section>
+<!-- Testimonials/Stats -->
+<section class="py-xl bg-inverse-surface text-on-primary overflow-hidden">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-lg text-center">
+<div>
+<p class="font-display-lg text-primary-fixed-dim">50k+</p>
+<p class="font-label-md uppercase opacity-70">Happy Customers</p>
+</div>
+<div>
+<p class="font-display-lg text-primary-fixed-dim">15+</p>
+<p class="font-label-md uppercase opacity-70">Expert Mechanics</p>
+</div>
+<div>
+<p class="font-display-lg text-primary-fixed-dim">4.8/5</p>
+<p class="font-label-md uppercase opacity-70">Google Rating</p>
+</div>
+<div>
+<p class="font-display-lg text-primary-fixed-dim">24h</p>
+<p class="font-label-md uppercase opacity-70">Parts Availability</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-inverse-surface dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-xl px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div>
+<span class="font-title-lg text-title-lg font-bold text-on-primary mb-4 block">Sri Maruthi Motors</span>
+<p class="text-on-surface-variant opacity-80 font-body-sm mb-6">Your authorized Hero MotoCorp dealer in Bargur. Delivering excellence in sales and service for over a decade.</p>
+<div class="flex space-x-4">
+<a class="text-on-primary hover:text-primary-fixed-dim transition-colors" href="#"><span class="material-symbols-outlined" data-icon="facebook">face_nod</span></a>
+<a class="text-on-primary hover:text-primary-fixed-dim transition-colors" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+</div>
+</div>
+<div class="flex flex-col space-y-4"><span class="font-label-md text-label-md text-on-primary uppercase tracking-widest opacity-60">Quick Links</span>
+<a class="text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-all font-label-md" href="#">Home</a>
+<a class="text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-all font-label-md" href="#">Inventory</a>
+<a class="text-on-primary font-bold font-label-md" href="#">Service Booking</a>
+<a class="text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-all font-label-md" href="#">About Us</a>
+<a class="text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-all font-label-md" href="#">Contact Us</a>
+<a class="text-on-surface-variant opacity-80 hover:opacity-100 hover:text-primary-fixed-dim transition-all font-label-md" href="#">Privacy Policy</a></div>
+<div class="flex flex-col space-y-4">
+<span class="font-label-md text-label-md text-on-primary uppercase tracking-widest opacity-60">Location</span>
+<div class="flex items-start gap-2 text-on-surface-variant font-body-sm">
+<span class="material-symbols-outlined text-primary-fixed-dim" data-icon="location_on">location_on</span>
+<span>Bargur, Krishnagiri Dist,<br/>Tamil Nadu - 635104</span>
+</div>
+<div class="w-full h-32 rounded-lg bg-surface-container mt-2 grayscale hover:grayscale-0 transition-all duration-500 overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-location="Bargur, Tamil Nadu" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBiLIC6kKJegrLf2W1zgokz98ik4GtIscnbcwENC3EX_8luH-sdG2n0GeQfqlL8BjqGeD_dWhWZ4D5JtYS4mnOsxpg1aHr3SRAFZ-hPj-RNMmsSolemEdzE-UenTFTXL-EOwx1T6xEkK4l0BpJmrItwgvIOkaVNhvifx9ynh1asM0QECDpcjxveoBblIHpw5K1xrfFpKprJ7pHI1hTON7JY9QG1j3QZ93jprzey_smHFCox82FpqPCyHk0dHOR0EPO5kBt9nJzdXiE')"></div>
+</div>
+</div>
+</div>
+<div class="border-t border-on-surface/10 py-6 text-center">
+<p class="text-on-surface-variant opacity-60 font-body-sm">© 2024 Sri Maruthi Motors (Hero MotoCorp Dealership). All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Micro-interaction: Form submission
+        document.getElementById('serviceForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<span class="material-symbols-outlined animate-spin" data-icon="autorenew">autorenew</span> Scheduling...';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.classList.replace('bg-primary', 'bg-green-600');
+                btn.innerHTML = '<span class="material-symbols-outlined" data-icon="check_circle">check_circle</span> Booking Confirmed!';
+                setTimeout(() => {
+                    btn.classList.replace('bg-green-600', 'bg-primary');
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                    e.target.reset();
+                }, 3000);
+            }, 1500);
+        });
+
+        // Sticky Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+                nav.classList.replace('py-4', 'py-2');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.classList.replace('py-2', 'py-4');
+            }
+        });
+    </script>
+</body></html>
