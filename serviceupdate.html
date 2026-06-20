@@ -9,46 +9,119 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
     <style>
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
     </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#b90027",
+                "on-primary": "#ffffff",
+                "primary-container": "#e31837",
+                "surface": "#f9f9ff",
+                "surface-container-low": "#f0f3ff",
+                "surface-container-lowest": "#ffffff",
+                "inverse-surface": "#2a313d",
+                "on-surface": "#151c27",
+                "on-surface-variant": "#5d3f3e",
+                "secondary": "#5f5e5e",
+                "outline-variant": "#e6bdbb"
+              }
+            }
+          }
+        }
+    </script>
 </head>
 <body class="bg-background text-on-surface font-body-md">
 
 <!-- TopNavBar -->
 <nav class="sticky top-0 w-full z-50 bg-surface shadow-sm border-b border-outline-variant">
     <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-max-width mx-auto">
-        <div class="font-headline-md text-headline-md font-extrabold tracking-tight text-primary">Sri Maruthi Motors</div>
-        
-        <!-- Desktop Links -->
+        <span class="font-headline-md text-headline-md font-extrabold tracking-tight text-primary">Sri Maruthi Motors</span>
         <div class="hidden md:flex items-center space-x-8">
             <a class="font-label-md text-secondary hover:text-primary transition-colors" href="index.html">Home</a>
             <a class="font-label-md text-secondary hover:text-primary transition-colors" href="inventory.html">Inventory</a>
             <a class="font-label-md text-primary border-b-2 border-primary pb-1" href="service.html">Service</a>
             <a class="font-label-md text-secondary hover:text-primary transition-colors" href="about.html">About Us</a>
             <a class="font-label-md text-secondary hover:text-primary transition-colors" href="contact.html">Contact</a>
-            <button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md scale-100 active:scale-95 transition-transform">Book Test Ride</button>
+            <button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md transition-transform active:scale-95">Book Test Ride</button>
         </div>
     </div>
 </nav>
 
-<!-- ... (Main Content remains unchanged) ... -->
+<main>
+    <!-- Hero Section -->
+    <section class="relative w-full min-h-[614px] flex items-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-inverse-surface/90 to-inverse-surface/40 z-10"></div>
+        <div class="w-full h-full absolute bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB6VtjIQjGjl9TSQG8JJD7ywBsAVmb16uMWx-nk23t2cV7IW0ELVMBH8rxKcHHoxVEbhMD6llL8532Tog4gMgb8GOz4WzrRFudPe9U7FgbqF9a4GtK-quSoRgacYvQ572WH5BgHPTiqHjLOMcSSUyspkTWeoXJoCLHy_fe8n5ePwDi1c5ezSf9RrfyTO7IuZirRiApGYtKgULKZNNw_ebsrnXBQzdA4FYV-Iw6NZdf6JbJLITG6kbJqzZe-M40RScbR8yHSmvx7HOk')"></div>
+        <div class="relative z-20 max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop text-on-primary">
+            <h1 class="font-display-lg text-display-lg mb-4">Precision Care for Your Hero</h1>
+            <p class="text-body-md text-on-surface-variant mb-8">Experience factory-standard service with genuine parts and expert technicians.</p>
+            <a href="#service-booking" class="bg-primary text-on-primary px-8 py-4 rounded-lg font-title-lg">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Bento Grid Features -->
+    <section class="py-xl max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+        <h2 class="font-headline-md mb-lg">Why Trust Sri Maruthi Motors?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+            <div class="md:col-span-8 bg-surface-container-low p-8 rounded-xl border">
+                <h3 class="font-title-lg mb-2">Factory-Certified Technicians</h3>
+                <p>Our team undergoes rigorous training directly from Hero MotoCorp experts.</p>
+            </div>
+            <div class="md:col-span-4 bg-inverse-surface p-8 rounded-xl text-on-primary">
+                <h3 class="font-title-lg mb-2">100% Genuine Spare Parts</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="py-xl bg-surface-container-low" id="service-booking">
+        <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-xl">
+            <div>
+                <h2 class="font-headline-md mb-6">Schedule Your Visit</h2>
+                <p>Fill out the form, and our service coordinators will confirm your slot.</p>
+            </div>
+            <div class="bg-surface-container-lowest p-10 rounded-2xl shadow-xl">
+                <form id="serviceForm" class="space-y-6">
+                    <input type="text" id="fullName" placeholder="Full Name" required class="w-full p-3 border rounded-lg">
+                    <input type="tel" id="phone" placeholder="Phone Number" required class="w-full p-3 border rounded-lg">
+                    <select id="vehicleModel" required class="w-full p-3 border rounded-lg">
+                        <option value="">Select Model</option>
+                        <option value="splendor">Hero Splendor Plus</option>
+                        <option value="xpulse">Hero XPulse 200</option>
+                    </select>
+                    <input type="date" id="serviceDate" required class="w-full p-3 border rounded-lg">
+                    <button type="submit" class="w-full bg-primary text-on-primary py-4 rounded-lg">Book Appointment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
 
 <!-- Footer -->
-<footer class="bg-inverse-surface border-t border-outline-variant">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-xl px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
-        <div>
-            <span class="font-title-lg text-title-lg font-bold text-on-primary mb-4 block">Sri Maruthi Motors</span>
-        </div>
+<footer class="bg-inverse-surface border-t border-outline-variant py-xl">
+    <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-lg text-on-primary">
+        <div><h3 class="font-title-lg font-bold mb-4">Sri Maruthi Motors</h3></div>
         <div class="flex flex-col space-y-4">
-            <span class="font-label-md text-on-primary uppercase tracking-widest opacity-60">Quick Links</span>
-            <a class="text-on-surface-variant hover:text-primary-fixed-dim transition-all" href="index.html">Home</a>
-            <a class="text-on-surface-variant hover:text-primary-fixed-dim transition-all" href="inventory.html">Inventory</a>
-            <a class="text-on-primary font-bold" href="service.html">Service Booking</a>
-            <a class="text-on-surface-variant hover:text-primary-fixed-dim transition-all" href="about.html">About Us</a>
-            <a class="text-on-surface-variant hover:text-primary-fixed-dim transition-all" href="contact.html">Contact Us</a>
-            <a class="text-on-surface-variant hover:text-primary-fixed-dim transition-all" href="privacy.html">Privacy Policy</a>
+            <a href="index.html">Home</a>
+            <a href="inventory.html">Inventory</a>
+            <a href="service.html" class="font-bold underline">Service Booking</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
         </div>
     </div>
 </footer>
 
+<script>
+    document.getElementById('serviceForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Booking Confirmed!');
+        this.reset();
+    });
+</script>
 </body>
 </html>
+
